@@ -118,6 +118,24 @@ aside {
     display: table-cell;  
     width: 300px;  
 }
+
+aside section {
+    background: url("http://cdn.tutsplus.com/net/uploads/legacy/373_html5/final/images/sidebar_section_background.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+    margin: 22px 0 0 22px;
+    padding: 11px 22px;
+}
+aside section ul {
+    list-style: none outside none;
+    margin: 0 0 0 22px;
+}
+aside section ul li a {
+    color: #000000;
+    display: block;
+    text-decoration: none;
+}
+aside section ul li a:hover {
+    text-decoration: underline;
+}
 .blogPost div {  
     column-count: 2;  
     column-gap: 22px;  
@@ -149,4 +167,87 @@ aside {
 .blogPost img {  
     margin: 22px 0;  
     -webkit-box-shadow: 3px 3px 7px #777;  
-}    
+}
+
+section#comments article:nth-child(2n+1) {
+/*section#comments article:nth-child(odd) {     */  
+    padding: 21px;  
+    background: #E3E3E3;  
+    border: 1px solid #d7d7d7;  
+  
+    /* Border-radius not implemented yet */  
+    -moz-border-radius: 11px;  
+    -webkit-border-radius: 11px;  
+}
+
+form {
+    border-top: 1px solid #D7D7D7;
+    margin-top: 21px;
+    padding-top: 22px;
+}
+form p {
+    display: table;
+    margin-bottom: 22px;
+    padding: 0 22px;
+}
+form label {
+    display: table-cell;
+    font-weight: bold;
+    padding-right: 20px;
+    text-align: right;
+    vertical-align: top;
+    width: 140px;
+}
+form input[type="text"], form input[type="email"], form input[type="url"] {
+    border: 1px solid #D7D7D7;
+    display: table-cell;
+    height: 20px;
+    width: 300px;
+}
+form textarea {
+    border: 1px solid #D7D7D7;
+    height: 100px;
+    width: 300px;
+}
+form input[type="submit"] {
+    margin-left: 162px;
+}
+
+footer {
+    background: none repeat scroll 0 0 #222222;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+footer div {
+    color: #777777;
+    display: table;
+    margin: 0 auto;
+    padding: 44px 0;
+    width: 940px;
+}
+footer div section {
+    display: table-cell;
+    width: 300px;
+}
+footer div #about, footer div #blogroll {
+    padding-right: 20px;
+}
+footer h3 {
+    color: #FFFFFF;
+}
+footer a {
+    color: #999999;
+}
+footer a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+footer ul {
+    color: #565656;
+    list-style: square outside none;
+    margin: 0 0 0 40px;
+}
+footer ul li a {
+    display: block;
+}
